@@ -73,3 +73,12 @@ li a {
   padding-right: 5%;
   padding-bottom: 10%;
 }
+/* --- RESERVATION STYLING --- */
+.form-styling {
+  border: 1px solid black;
+  
+}
+
+.reservation-form input {
+  border-radius: 50%;
+}
