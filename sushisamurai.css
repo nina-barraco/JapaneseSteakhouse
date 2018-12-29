@@ -49,3 +49,27 @@ li a {
 .menu-item {
   width: 50%;
 }
+
+/* -- ABOUT STYLING -- */
+
+#about-background-image {
+  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("images/aboutHeader.jpg");
+}
+
+.about-description {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+.about-text {
+  font-size: 1.5rem;
+}
+
+.about-quote {
+  font-size: 2rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 10%;
+}
