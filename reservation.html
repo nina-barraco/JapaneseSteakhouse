@@ -7,33 +7,47 @@
     <title>Reservation</title>
     <link rel="stylesheet" type="text/css" href="sushisamurai.css">
 </head>
-    <body>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="reservation.html">Reservations</a></li>
-        </ul>
-        <div class="background-image">
-            <div class="form-styling">
-                <div class="title">
-                    <h1>Reservation Form</h1>
+    <body class="reservation">
+        <div class="page-view">
+
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+            </ul>
+
+            <div id="reservation-background">
+
+                <div class="form-styling">
+
+                    <div class="reservation-form">
+                        <form action="#" method="POST">
+                            <dl>
+                                <dt>
+                                    <dd><div class="title">
+                                        <h1>Reservation Form</h1>
+                                    </div></dd>
+                                </dt>
+                                <dt><label for="first-name">First Name: </label></dt>
+                                    <dd><input type="text" name="first-name" max-length="50" size="50" required /></dd>
+                                <dt><label for="last-name">Last Name: </label></dt>
+                                    <dd><input type="text" name="last-name" max-length="50" size="50" required /></dd>
+                                <dt><label for="phone-number">Phone Number: </label></dt>
+                                    <dd><input type="text" name="phone-number" max-length="20" size="50" required /></dd>
+                                <dt><label for="email">Email Address: </label></dt>
+                                    <dd><input class="email-validation" type="email" name="email" size="50" max-length="100" /></dd>
+                                <dt><dd><input type="submit" value="Submit" /></dd></dt>
+                            </dl>
+                            
+                        </form>
+                    </div>
+
                 </div>
-                <div class="reservation-form">
-                    <form action="#" method="POST">
-                        <label for="first-name">First Name: </label>
-                            <input type="text" name="first-name" max-length="50" required />
-                        <label for="last-name">Last Name: </label>
-                            <input type="text" name="last-name" max-length="50" required />
-                        <label for="phone-number">Phone Number: </label>
-                            <input type="text" name="phone-number" max-length="20" required />
-                        <label for="email">Email Address: </label>
-                            <input class="email-validation" type="email" name="email" max-length="100" />
-                        <input type="submit" value="Submit" />
-                    </form>
-                </div>
+
             </div>
+
         </div>
     </body>
 </html>

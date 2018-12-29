@@ -74,11 +74,27 @@ li a {
   padding-bottom: 10%;
 }
 /* --- RESERVATION STYLING --- */
+
 .form-styling {
-  border: 1px solid black;
-  
+  margin: auto auto auto auto;
+  width: 30%;
+  text-align: center;
+  background: black;
+}
+
+.form-styling form {
+  display: inline-block;
 }
 
 .reservation-form input {
-  border-radius: 50%;
+  border-radius: 15%;
+}
+
+.reservation-form label, .title {
+  color: red;
+}
+
+.reservation {
+  background: url("images/Reservations-JapaneseSteakhouse.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
