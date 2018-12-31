@@ -75,26 +75,27 @@ li a {
 }
 /* --- RESERVATION STYLING --- */
 
-.form-styling {
-  margin: auto auto auto auto;
-  width: 30%;
-  text-align: center;
-  background: black;
-}
-
-.form-styling form {
-  display: inline-block;
-}
-
-.reservation-form input {
-  border-radius: 15%;
-}
-
-.reservation-form label, .title {
-  color: red;
-}
-
 .reservation {
   background: url("images/Reservations-JapaneseSteakhouse.jpg") no-repeat center center fixed;
   background-size: cover;
+}
+
+.page-view {
+  position: relative;
+}
+
+.form-styling {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-200px, -200px);
+}
+
+.reservation-form {
+  background: linear-gradient(rgba(0, 0, 0, 1), rgb(0, 0, 0, 0.5));
+  color: white;
+}
+
+#reservation-form input {
+  border-radius: 5%;
 }
