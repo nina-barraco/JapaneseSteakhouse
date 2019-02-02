@@ -113,3 +113,7 @@ p {
 #reservation-form input {
   border-radius: 5%;
 }
+
+.title h1 {
+  font-family: 'seven_swordsmen_bbregular';
+}
