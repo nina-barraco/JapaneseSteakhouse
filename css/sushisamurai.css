@@ -73,6 +73,30 @@ li a {
 #menu-background-image {
   background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/menuHeader.jpg");
 }
+.menu-Apps {
+  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/ishan-seefromthesky-1113278-unsplash.jpg");
+  color: white;
+}
+.menu-rolls{
+  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/menu-rolls.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+}
+.menu-entrees{
+  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/menu-entrees.jpg");
+  color: white;
+
+
+}
+.menu-drinks{
+  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/menu-drinks.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 0px bottom -63px;
+  color: white;
+}
 
 .menu-section {
   display: flex;
@@ -84,9 +108,14 @@ li a {
 .menu-section h2 {
   width: 100%;
 }
+.menu-section-header {
+  text-align: center;
+}
 
 .menu-item {
   width: 50%;
+  text-align: center;
+  font-size: 20px
 }
 
 /* -- ABOUT STYLING -- */
