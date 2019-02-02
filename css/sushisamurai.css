@@ -148,6 +148,7 @@ li a {
   width: 70%;
   
 }
+
 /* --- RESERVATION STYLING --- */
 
 .reservation {
@@ -169,12 +170,32 @@ li a {
 .reservation-form {
   background: linear-gradient(rgba(0, 0, 0, 1), rgb(0, 0, 0, 0.5));
   color: white;
+  border-radius: 15%;
+  display: block;
+  padding: 10px;
 }
 
 #reservation-form input {
   border-radius: 5%;
+  padding: 10px;
 }
 
 .title h1 {
   font-family: 'seven_swordsmen_bbregular';
+  color: red;
+  letter-spacing: 10px;
+  line-height: 5px;
 }
+
+#reservation-form label {
+  color: red;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#reservation-form .submit {
+  
+}
+
+/* --- END RESERVATION STYLING --- */
