@@ -34,6 +34,10 @@ p {
   font-family: "Lato", sans-serif;
 }
 
+h1 {
+  font-family: "seven_swordsmen_bbregular";
+}
+
 /* --- MENU STYLING --- */
 #menu-background-image {
   background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/menuHeader.jpg");
@@ -57,7 +61,12 @@ p {
 /* -- ABOUT STYLING -- */
 
 #about-background-image {
-  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/aboutHeader.jpg");
+  background-image: linear-gradient(rgba(22, 14, 48, 0.5), rgba(22, 14, 48, 0.5)), url("../images/aboutHeader.jpg");
+}
+
+#about-title {
+  font-size: 3em;
+  letter-spacing: .5em;
 }
 
 .about-description {
@@ -79,6 +88,27 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.three-words-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.wrap {
+  width: 70%;
+}
+
+.about-hr {
+  width: 25%;
+}
+
+#three-words {
+  font-family: "seven_swordsmen_bbregular";
+  font-size: 2.5em;
+  letter-spacing: .3em;
+  text-align: center;
 }
 
 .about-quote {
