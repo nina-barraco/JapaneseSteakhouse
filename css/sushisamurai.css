@@ -1,5 +1,5 @@
 .background-image {
-    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("images/ishan-seefromthesky-1113278-unsplash.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/ishan-seefromthesky-1113278-unsplash.jpg");
     color: white;
     text-align: center;
     width: 100%;
@@ -36,7 +36,7 @@ p {
 
 /* --- MENU STYLING --- */
 #menu-background-image {
-  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("images/menuHeader.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/menuHeader.jpg");
 }
 
 .menu-section {
@@ -57,33 +57,40 @@ p {
 /* -- ABOUT STYLING -- */
 
 #about-background-image {
-  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("images/aboutHeader.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/aboutHeader.jpg");
 }
 
 .about-description {
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 5%;
-  padding-bottom: 3%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .about-text {
-  font-size: 1.5rem;
-  font-size: 1.3em;
+  font-size: 1.2em;
   color: rgb(39, 39, 39);
-  line-height: 1.4em;
+  line-height: 1.6em;
+  width: 70%;
+}
+
+.about-description2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .about-quote {
   font-size: 2rem;
-  padding-left: 5%;
-  padding-right: 5%;
   padding-bottom: 10%;
+  width: 70%;
+  
 }
 /* --- RESERVATION STYLING --- */
 
 .reservation {
-  background: url("images/Reservations-JapaneseSteakhouse.jpg") no-repeat center center fixed;
+  background: url("../images/Reservations-JapaneseSteakhouse.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
