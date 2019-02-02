@@ -1,5 +1,5 @@
 .background-image {
-    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("images/ishan-seefromthesky-1113278-unsplash.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/ishan-seefromthesky-1113278-unsplash.jpg");
     color: white;
     text-align: center;
     width: 100%;
@@ -32,7 +32,7 @@ li a {
 
 /* --- MENU STYLING --- */
 #menu-background-image {
-  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("images/menuHeader.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/menuHeader.jpg");
 }
 
 .menu-section {
@@ -53,7 +53,7 @@ li a {
 /* -- ABOUT STYLING -- */
 
 #about-background-image {
-  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("images/aboutHeader.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/aboutHeader.jpg");
 }
 
 .about-description {
@@ -76,7 +76,7 @@ li a {
 /* --- RESERVATION STYLING --- */
 
 .reservation {
-  background: url("images/Reservations-JapaneseSteakhouse.jpg") no-repeat center center fixed;
+  background: url("../images/Reservations-JapaneseSteakhouse.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
