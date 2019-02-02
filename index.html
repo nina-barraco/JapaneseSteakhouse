@@ -3,17 +3,73 @@
 <head>
 	<title>Sushi Samurai</title>
 	<link rel="stylesheet" type="text/css" href="css/sushisamurai.css">
+
+<style type="text/css">
+	img {
+  	width: 95%;
+  	height: 50%;
+	}
+	
+main {
+	display: flex;
+    flex-direction: row;
+}
+
+#About {
+	width: 25%;
+}
+
+#Menu {
+	width: 25%;
+}
+
+#Reservations {
+	width: 25%;
+}
+
+#Contact {
+	width: 25%;
+}
+
+</style>
 </head>
+
 <body>
-<ul>
-	<li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About Us</a></li>
-  <li><a href="menu.html">Menu</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="reservation.html">Reservations</a></li>
-</ul>
+<div class="topnav">
+  <a class="active" href="./about.html">About Us</a>
+  <a href="./menu.html">Menu</a>
+  <a href="#contact">Contact</a>
+  <a href="./reservation.html">Reservations</a>
+</div>
 	<div class="background-image">
 		<h1>Welcome to Sushi Samurai</h1>
 	</div>
+<main>
+	<section id="About">
+		<a href="./about.html" target="_blank">
+			<h3>About</h3>
+			<img src="images/About-JapaneseSteakhouse.jpg">
+		 </a>
+	</section>
+	<section id="Menu">
+		<a href="./menu.html" target="_blank">
+			<h3>Menu</h3>
+		    <img src="images/Menu-JapaneseSteakhouse.jpg">
+		</a>
+	</section>
+	<section id="Reservations">
+		<a href="./reservation.html" target="_blank">
+			<h3>Reservations</h3>
+			<img src="images/Reservations-JapaneseSteakhouse.jpg">
+		</a>
+	</section>
+	<section id="Contact">
+	  <a href="#" target="_blank">
+		<h3>Contact</h3>
+		<img src="images/Contact-JapaneseSteakhouse.jpg">
+	  </a>
+	</section>
+
+</main>
 </body>
 </html>
