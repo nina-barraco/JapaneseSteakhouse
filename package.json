@@ -1,0 +1,23 @@
+{
+  "name": "japanesesteakhouse",
+  "version": "1.0.0",
+  "description": "Shift_Up group project",
+  "main": "app,js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nina-barraco/JapaneseSteakhouse.git"
+  },
+  "keywords": [
+    "steakhouse",
+    "shiftup"
+  ],
+  "author": "Shift_Up",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nina-barraco/JapaneseSteakhouse/issues"
+  },
+  "homepage": "https://github.com/nina-barraco/JapaneseSteakhouse#readme"
+}
