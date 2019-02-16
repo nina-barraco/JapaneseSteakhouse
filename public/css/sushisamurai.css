@@ -1,9 +1,13 @@
+body {
+  margin: 0;
+}
+
 .background-image {
     background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/ishan-seefromthesky-1113278-unsplash.jpg");
     color: white;
     text-align: center;
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -125,7 +129,7 @@ li a {
 }
 
 #about-title {
-  font-size: 3em;
+  font-size: 5em;
   letter-spacing: .5em;
 }
 
@@ -173,9 +177,11 @@ li a {
 
 .about-quote {
   font-size: 2rem;
-  padding-bottom: 10%;
+  margin-top: 5%;
+  margin-bottom: 10%;
   width: 70%;
-  
+  line-height: 1.5em;
+  font-weight: 300;
 }
 
 /* --- RESERVATION STYLING --- */
