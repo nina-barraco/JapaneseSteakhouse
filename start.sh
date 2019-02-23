@@ -14,3 +14,7 @@ else
   echo "You do not have nodemon installed, running the app through node"
   node app.js
 fi
+
+# if you run into issues with the server process running on after the app should have closed it use these commands
+# ps ax (this will echo the current running processes)
+# kill <Process ID> (replace Process ID with the process id shown by the previous command)
