@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 8000;
 const mongoose = require('mongoose');
+const mongoPort = process.env.MONGO_PORT || 27017;
 const parser = require('body-parser');
 const path = require('path');
 
@@ -19,7 +20,13 @@ app.use(parser.urlencoded({extended: true}));
 // when static content (css and html files) are requested
 app.use(express.static(path.join(__dirname, 'public')));
 
-mongoose.connect('mongodb://localhost')
+mongoose.connect(`mongodb://localhost/${mongoPort}`, {useNewUrlParser: true, useFindAndModify: false}).then(db=>
+{
+    console.log(`Connected to database on port ${mongoPort}`);
+}).catch(err=>
+{
+    console.log(err);
+});
 
 // this is telling the server that any requests to the root (/)
 // are to be handled by the router included below
