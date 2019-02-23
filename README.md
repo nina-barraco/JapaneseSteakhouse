@@ -9,7 +9,8 @@ Instructions for running locally:
     a. This is downloading all the packages the application depends on as indicated by the package.json file which should now be in your root directory.
   4. At this point you are ready to run the application. Run the following command: node app.js
     a. This will start your local server.
-  5. To view your website locally at this point, open your browser and navigate to localhost:8000
+  5. To view your website locally at this point, open your browser and 
+navigate to localhost:8000 (example: http://localhost:8000)
   6. To close your server press Control + C
 
 Notes:
