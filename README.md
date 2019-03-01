@@ -16,6 +16,12 @@ navigate to localhost:8000 (example: http://localhost:8000)
 Notes:
   If you have a conflict on port 8000 you can set the port enviroment variable by starting your server with the following command: PORT=3000 node app.js (3000 was just an example, you can pick whatever port you know will not conflict with your computer.)
 
-UPDATE:
+KNOWN ISSUES:
+  When you first download the shell script and try running via "npm start", if you get an error response with something to the effect of "Command not found" you will probably have to change the permissions on the shell script. Run the command "chmod +x start.sh" 
+  to fix this.
+
+UPDATE version 0.0.1:
   There is now a shell script for starting the app and setting ports for the app to use. If you need to change the ports that the app will use you can edit the shell script (start.sh) where it says export PORT=3000, you can change 3000 to whatever port you want. 
   There is now a start script in the package.json so you can fire the app up using the command <npm start>.
+UPDATE version 0.0.2:
+  The shell script will now check if you have nodemon or node installed. If you have neither it will tell you to read this file for instructions on downloading node.
