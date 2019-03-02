@@ -8,7 +8,8 @@ export MONGO_PORT=27017
 MONGO_PATH=$(which mongo)
 
 # check if user has mongo installed, if not they will have to install it
-CHECK=$(type "${MONGO_PATH}")
+CHECK=$(type "$MONGO_PATH")
+echo $CHECK
 if [ $? -ne 0 ]
   then
     echo "You need to have mongo installed to run this app. Other possible issue is mongo is not an environment variable."
