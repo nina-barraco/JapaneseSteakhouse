@@ -10,7 +10,7 @@ export MONGO_PORT=27017
 CHECK=$(type mongo)
 if [ $? -ne 0 ]
   then
-    echo "You need to have mongo installed to run this app."
+    echo "You need to have mongo installed to run this app. Other possible issue is mongo is not an environment variable."
     exit 1
   else
     echo "You have mongo installed, continuing."
