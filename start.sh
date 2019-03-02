@@ -6,17 +6,27 @@
 export PORT=3000
 export MONGO_PORT=27017
 
+# check if user has mongo installed, if not they will have to install it
+CHECK=$(type mongo)
+if [ $? -ne 0 ]
+  then
+    echo "You need to have mongo installed to run this app."
+    exit 1
+  else
+    echo "You have mongo installed, continuing."
+fi
+
 # try and detect if user has nodemon installed, if so run app using nodemon, else use node
-type nodemon
+CHECK=$(type nodemon)
 if [ $? -eq 0 ]
 then
-  echo "You have nodemon installed, running the program through nodemon"
+  echo "You have nodemon installed, running the app through nodemon."
   nodemon app.js
 else
-  type node
+  CHECK=$(type node)
   if [ $? -eq 0 ]
   then
-    echo "You do not have nodemon installed, running the app through node"
+    echo "You do not have nodemon installed, running the app through node."
     node app.js
   else
     echo "You do not have nodemon or node installed, you cannot run this app without one of these programs. Please read the README.md file for instructions on installing node."
