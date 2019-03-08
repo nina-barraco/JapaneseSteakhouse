@@ -1,0 +1,67 @@
+body {
+  margin: auto;
+}
+
+#total-contact {
+  background-color: lightgrey;
+  width: 800px;
+  border: 25px solid blue;
+  padding: 25px;
+  margin: auto;
+  text-align: center;
+}
+
+#title {
+  text-align: center;
+  color: rgb(38, 0, 128);
+}
+
+.btn:hover {
+  background-color: blue; /* Green */
+  color: white;
+}
+
+#description {
+  color: rgb(38, 0, 128);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
