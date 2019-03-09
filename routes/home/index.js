@@ -13,6 +13,10 @@ router.get('/menu', (req, res)=>
     res.sendFile(path.join(root + '/menu.html'));
 });
 
+router.get('/contact', (req, res) => {
+    res.sendFile(path.join(root + '/contact.html'));
+})
+
 router.get('/reservation', (req, res)=>
 {
     res.sendFile(path.join(root + '/reservation.html'));
@@ -29,9 +33,9 @@ router.post('/reservation', (req, res)=>
     res.send('<h1>This form has not been set up yet.</h1>');
 });
 
-router.get('/contact', (req, res)=>
-{
-    res.send('<h1>This page has not been implemented yet.</h1>');
-})
+// router.get('/contact', (req, res)=>
+// {
+//     res.send('<h1>This page has not been implemented yet.</h1>');
+// })
 
 module.exports = router;
