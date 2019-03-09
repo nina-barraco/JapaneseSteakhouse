@@ -26,17 +26,17 @@
                             <dl>
                                 <dt>
                                     <dd><div class="title">
-                                        <h1>Reservation Form</h1>
+                                        <h1>Reservation</h1>
                                     </div></dd>
                                 </dt>
-                                <dt><label for="first-name">First Name: </label></dt>
-                                    <dd><input type="text" name="first-name" max-length="50" size="10" required /></dd>
-                                <dt><label for="last-name">Last Name: </label></dt>
-                                    <dd><input type="text" name="last-name" max-length="50" size="10" required /></dd>
-                                <dt><label for="phone-number">Phone Number: </label></dt>
-                                    <dd><input type="text" name="phone-number" max-length="20" size="10" required /></dd>
+                                <dt><label for="name">Name: </label></dt>
+                                    <dd><input type="text" name="name" max-length="50" size="20" required /></dd><br>
+                                
+                                <dt><label for="usrtel">Telephone: </label></dt>
+                                    <dd><input type="tel" name="usrtel" max-length="20" size="10" required /></dd><br>
+
                                 <dt><label for="email">Email Address: </label></dt>
-                                    <dd><input class="email-validation" type="email" name="email" size="30"  required max-length="100" /></dd>
+                                    <dd><input class="email-validation" type="email" name="email" size="30"  required max-length="100" /></dd><br>
                                     
 
                                 <dt><label for="reservation-date">Reservation Date:</label></dt>                                  <dd><input type="date"                  name="reservation-date" required /></dd><br>
@@ -45,7 +45,9 @@
                                 <dt><label for="reservation-time">Reservation Time:</label></dt>
                                 <dd><input type="time" id="apt" name="appt"
                                 min="15:00" max="22:00" required/></dd><br>
-
+                                
+                                <dt><label for="party number">Party Number: </label></dt>
+                                <dd><input type="text" name="party-number" max-length="50" size="3" required /></dd><br>
                                     
                                     
                                 <dt><dd><input class="submit" type="submit" value="Submit" /></dd></dt>

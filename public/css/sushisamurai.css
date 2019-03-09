@@ -3,7 +3,7 @@ body {
 }
 
 .background-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background-image: linear-gradient(#00000033, rgba(0, 0, 0, 0.2)),
     url("../images/ishan-seefromthesky-1113278-unsplash.jpg");
   color: white;
   text-align: center;
@@ -217,9 +217,15 @@ li a {
   padding: 10px;
 }
 
-#reservation-form input {
+/*#reservation-form input {
   border-radius: 5%;
   padding: 10px;
+}
+*/
+
+#reservation-form input {
+  border-radius: 5%;
+  padding: 7px;
 }
 
 .title h1 {
