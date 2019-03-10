@@ -16,6 +16,11 @@ body {
   color: rgb(38, 0, 128);
 }
 
+.heading {
+  text-align: center;
+  color: rgb(38, 0, 128);
+}
+
 .btn:hover {
   background-color: blue; /* Green */
   color: white;
