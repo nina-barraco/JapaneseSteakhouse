@@ -26,9 +26,11 @@ body {
   color: white;
 }
 
-#description {
+/*#description {
   color: rgb(38, 0, 128);
 }
+*/
+
 
 .topnav {
   overflow: hidden;
