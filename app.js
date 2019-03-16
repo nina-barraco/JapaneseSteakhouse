@@ -1,3 +1,12 @@
+const dotenv = require('dotenv');
+const result = dotenv.config();
+
+if (result.error)
+{
+    console.log(result.error);
+    process.kill(process.pid);
+}
+
 // this is the enterance to the website
 const express = require('express');
 const app = express();
@@ -6,7 +15,7 @@ const mongoose = require('mongoose');
 const mongoPort = process.env.MONGO_PORT || 27017;
 const parser = require('body-parser');
 const path = require('path');
-const {mongoUrl} = require('./Config/mongoAtlas');
+// const {mongoUrl} = require('./Config/mongoAtlas');
 
 // setting middleware for application
 // this is telling the server to use the body-parser module
@@ -29,13 +38,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 //     console.log(err);
 // });
 
-mongoose.connect(mongoUrl,
+mongoose.connect(process.env.DB_URL,
 {
     useNewUrlParser: true,
     useFindAndModify: false
 }).then(db=>
 {
-    console.log('db is connected.');
+    console.log(db);
 }).catch(err=>
 {
     console.log(err);
