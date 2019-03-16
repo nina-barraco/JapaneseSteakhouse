@@ -4,7 +4,8 @@
   "description": "Shift_Up group project",
   "main": "app,js",
   "scripts": {
-    "start": "start.sh"
+    "start": "nodemon app.js",
+    "start-node": "node app.js"
   },
   "repository": {
     "type": "git",

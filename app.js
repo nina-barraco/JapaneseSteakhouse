@@ -3,6 +3,8 @@ const result = dotenv.config();
 
 if (result.error)
 {
+    // this will only fire if there is a problem getting
+    // an environment variable
     console.log(result.error);
     process.kill(process.pid);
 }
@@ -12,10 +14,8 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 8000;
 const mongoose = require('mongoose');
-const mongoPort = process.env.MONGO_PORT || 27017;
 const parser = require('body-parser');
 const path = require('path');
-// const {mongoUrl} = require('./Config/mongoAtlas');
 
 // setting middleware for application
 // this is telling the server to use the body-parser module
@@ -30,24 +30,16 @@ app.use(parser.urlencoded({extended: true}));
 // when static content (css and html files) are requested
 app.use(express.static(path.join(__dirname, 'public')));
 
-// mongoose.connect(`mongodb://localhost/${mongoPort}`, {useNewUrlParser: true, useFindAndModify: false}).then(db=>
-// {
-//     console.log(`Connected to database on port ${mongoPort}`);
-// }).catch(err=>
-// {
-//     console.log(err);
-// });
-
 mongoose.connect(process.env.DB_URL,
 {
     useNewUrlParser: true,
     useFindAndModify: false
 }).then(db=>
 {
-    console.log(db);
+    app.emit('database', db);
 }).catch(err=>
 {
-    console.log(err);
+    console.log(`Error connecting to database.\nError: ${err}`);
 });
 
 // this is telling the server that any requests to the root (/)
@@ -55,7 +47,19 @@ mongoose.connect(process.env.DB_URL,
 const homeRouter = require('./routes/home/index.js');
 app.use('/', homeRouter);
 
-app.listen(port, ()=>
+app.on('database', db=>
 {
-    console.log(`Listening on port ${port}`);
+    app.listen(port, ()=>
+    {
+        if (db.connections[0]._readyState == 1)
+        {
+            console.log(`Database is running.`);
+            console.log(`Listening on port ${port}`);
+        }
+        else
+        {
+            console.log('Error connecting to database. Stopping application.');
+        }
+        
+    });
 });
