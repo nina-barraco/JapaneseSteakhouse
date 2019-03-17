@@ -29,26 +29,24 @@
         <div>
             <p id="description">Let us know how we can improve customer service</p>
 
-            <form id="contact-form" action="#" method="POST">
+            <form id="contact-form" action="/contact" method="POST">
 
 
-                <label for="name">First Name</label>
-                <input type="text" id="name" name="name" placeholder="first name" required><br><br><br>
+                <label for="firstName">First Name</label>
+                <input type="text" id="name" name="firstName" placeholder="first name" required><br><br><br>
 
-                <label for="name"> Last Name</label>
-                <input type="text" id="name" name="name" placeholder="last name" required><br><br><br>
+                <label for="lastName"> Last Name</label>
+                <input type="text" id="name" name="lastName" placeholder="last name" required><br><br><br>
 
-                <label for="phone number"> Phone Number</label>
-                <input type="text" id="phone number" phone number="phone number" placeholder="phone number"
+                <label for="phone"> Phone Number</label>
+                <input name="phone" type="text" id="phone number" phone number="phone number" placeholder="phone number"
                     required><br><br><br>
 
                 <label for="email">Email</label>
                 <input type="text" id="email" name="email" email="email" placeholder="email" required><br><br><br>
                 <div>
-            </form>
-            <form>
-                Any comments or suggestions?
-                <textarea rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
+                <label for="body">Any comments or suggestions?</label>
+                <textarea name="body" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
             </form>
 
 

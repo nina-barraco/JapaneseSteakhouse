@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const Reservation = new Schema({
+const Contact = new Schema({
     firstName: {
         type: String,
         required: true
@@ -11,21 +11,19 @@ const Reservation = new Schema({
         required: true
     },
     phone: {
-        type: Number,
-        required: true
+        type: String
     },
     email: {
+        type: String
+    },
+    body: {
         type: String,
         required: true
     },
     date: {
         type: Date,
-        required: true
-    },
-    size: {
-        type: Number,
-        required: true
+        default: Date.now()
     }
 });
 
-module.exports = mongoose.model('Reservation', Reservation);
+module.exports = mongoose.model('Contact', Contact);

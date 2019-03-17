@@ -4,7 +4,9 @@ const result = dotenv.config();
 if (result.error)
 {
     // this will only fire if there is a problem getting
-    // an environment variable
+    // an environment variable. in this case that will
+    // mean no database so we should not continue starting
+    // the application
     console.log(result.error);
     process.kill(process.pid);
 }
