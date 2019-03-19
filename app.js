@@ -42,6 +42,7 @@ mongoose.connect(process.env.DB_URL,
 }).catch(err=>
 {
     console.log(`Error connecting to database.\nError: ${err}`);
+    return;
 });
 
 // this is telling the server that any requests to the root (/)
