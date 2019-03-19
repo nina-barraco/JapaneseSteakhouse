@@ -19,5 +19,5 @@ Notes:
 
 Pushing to Github:
   1. git add <file path relative to root of project> (you can use <.> instead, however this will add anything that has been changed instead of specifically adding what you want to the staging area on git.)
-  2. git commit -m "<commit message>" (if you forget to add a message to the git commit you will most likely be brought to a vim editor in bash. if this happens you need to press <i> and type your message ("message"). when you are done press <:> then type <wq> and hit enter.
+  2. git commit -m "<commit message>" (if you forget to add a message to the git commit you will most likely be brought to a vim editor in bash. if this happens you need to press <'i'> (Note, the quotes inside the brackets are not part of the command, you just need to press the i key) and type your message ("message"). when you are done press <:> then type <wq> and hit enter.
   3. git push origin <branch>
