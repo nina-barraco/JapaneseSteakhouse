@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="/css/contact.css">
+</head>
+<body>
+    <div class="page-view">
+        <ul class="contact">
+            <li><a href="/">Home</a></li>
+            <li><a href="./about">About Us</a></li>
+            <li><a href="./menu">Menu</a></li>
+            <li><a href="./reservation">Reservations</a></li>
+            <li><a href="./contact">Contact</a></li>
+        </ul>
+    </div>
+    <h1 id="title">Contact Us</h1>
+    <h2 class="heading">Have a question or comment?</h2>
+    <h2 class="heading">Your in the right place</h2>
+    <div id="total-contact">
+        <div>
+            <p id="description">Let us know how we can improve customer service</p>
+            <form id="contact-form" action="/contact" method="POST">
+                <label for="firstName">First Name</label>
+                <input type="text" id="name" name="firstName" placeholder="first name" required><br><br><br>
+                <label for="lastName"> Last Name</label>
+                <input type="text" id="name" name="lastName" placeholder="last name" required><br><br><br>
+                <label for="phone"> Phone Number</label>
+                <input name="phone" type="text" id="phone number" phone number="phone number" placeholder="phone number"
+                    required><br><br><br>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" email="email" placeholder="email" required><br><br><br>
+                <div>
+                <label for="body">Any comments or suggestions?</label>
+                <textarea name="body" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
+            </form>
+            <br><br>
+            <button id="submit" type="submit" class="btn">Submit Comment</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

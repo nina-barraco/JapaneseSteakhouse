@@ -18,6 +18,24 @@ const port = process.env.PORT || 8000;
 const mongoose = require('mongoose');
 const parser = require('body-parser');
 const path = require('path');
+const opn = require('opn');
+const flash = require('connect-flash');
+const exphbs = require('express-handlebars');
+
+app.engine('handlebars', exphbs());
+
+app.set('view engine', 'handlebars');
+
+// splitting off routers
+// this is telling the server that any requests to the root (/)
+// are to be handled by the router included below
+const homeRouter = require('./routes/home/index.js');
+const contactRouter = require('./routes/contact/contact.js');
+const reservationRouter = require('./routes/reservation/reservation.js');
+
+app.use('/', homeRouter);
+app.use('/contact', contactRouter);
+app.use('/reservation', reservationRouter);
 
 // setting middleware for application
 // this is telling the server to use the body-parser module
@@ -45,11 +63,6 @@ mongoose.connect(process.env.DB_URL,
     return;
 });
 
-// this is telling the server that any requests to the root (/)
-// are to be handled by the router included below
-const homeRouter = require('./routes/home/index.js');
-app.use('/', homeRouter);
-
 app.on('database', db=>
 {
     app.listen(port, ()=>
@@ -58,6 +71,12 @@ app.on('database', db=>
         {
             console.log(`Database is running.`);
             console.log(`Listening on port ${port}`);
+
+            // this will open the application in the browser on start
+            // if you are using nodemon you will want to comment this
+            // line of code out, otherwise it will open a new browser tab
+            // each time the server restarts.
+            opn(`http://localhost:${port}`);
         }
         else
         {

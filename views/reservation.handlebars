@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reservation</title>
+    <link rel="stylesheet" type="text/css" href="css/sushisamurai.css">
+    <link rel="stylesheet" href="css/fonts/webfontkit-20190202-135254/stylesheet.css">
+</head>
+    <body class="reservation">
+        <div class="page-view">
+            <ul class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="./about">About Us</a></li>
+                <li><a href="./menu">Menu</a></li>
+                <li><a href="./contact">Contact</a></li>
+                <li><a href="#">Reservations</a></li>
+            </ul>
+                <div class="form-styling">
+                    <div class="reservation-form">
+                        <form id="reservation-form" action="/reservation" method="POST">
+                            <dl>
+                                <dt>
+                                    <dd><div class="title">
+                                        <h1>Reservation</h1>
+                                    </div></dd>
+                                </dt>
+                                <dt>
+                                    <label for="firstName">First Name: </label>
+                                </dt>
+                                <dd>
+                                    <input type="text" name="firstName" max-length="50" size="20" required />
+                                </dd><br>
+                                <dt>
+                                    <label for="lastName">Last Name: </label>
+                                </dt>
+                                <dd>
+                                    <input type="text" name="lastName" max-length="50" size="20" required />
+                                </dd><br>
+                                <dt>
+                                    <label for="phone">Telephone: </label>
+                                </dt>
+                                <dd>
+                                    <input type="tel" name="phone" max-length="20" size="10" required />
+                                </dd><br>
+                                <dt>
+                                    <label for="email">Email Address: </label>
+                                </dt>
+                                <dd>
+                                    <input class="email-validation" type="email" name="email" size="30"  required max-length="100" />
+                                </dd><br>
+                                <dt>
+                                    <label for="reservation-date">Reservation Date:</label>
+                                </dt>
+                                <dd>
+                                    <input type="date" name="date" required />
+                                </dd><br>
+                                <dt>
+                                    <label for="reservation-time">Reservation Time:</label>
+                                </dt>
+                                <dd>
+                                    <input type="time" id="apt" name="time"
+                                min="15:00" max="22:00" required/>
+                                </dd><br>
+                                <dt>
+                                    <label for="party number">Party Number: </label>
+                                </dt>
+                                <dd>
+                                    <input type="text" name="size" max-length="50" size="3" required />
+                                </dd><br>
+                                <dt>
+                                    <dd>
+                                        <input class="submit" type="submit" value="Submit" />
+                                    </dd>
+                                </dt>
+                            </dl>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>
