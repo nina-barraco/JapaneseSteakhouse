@@ -14,6 +14,7 @@
             <li><a href="./contact">Contact</a></li>
         </ul>
     </div>
+    {{> home/form-messages}}
     <h1 id="title">Contact Us</h1>
     <h2 class="heading">Have a question or comment?</h2>
     <h2 class="heading">Your in the right place</h2>
@@ -33,10 +34,9 @@
                 <div>
                 <label for="body">Any comments or suggestions?</label>
                 <textarea name="body" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
+                <button id="submit" type="submit" class="btn">Submit Comment</button>
             </form>
             <br><br>
-            <button id="submit" type="submit" class="btn">Submit Comment</button>
-            </form>
         </div>
     </div>
 </body>

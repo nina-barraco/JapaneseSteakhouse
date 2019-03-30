@@ -1,0 +1,15 @@
+{{#if successMessage}}
+    {{#each successMessage}}
+        <div>
+            <h3>{{this}}</h3>
+        </div>
+    {{/each}}
+{{/if}}
+
+{{#if errorMessage}}
+    {{#each errorMessage}}
+        <div>
+            <h3>{{this}}</h3>
+        </div>
+    {{/each}}
+{{/if}}

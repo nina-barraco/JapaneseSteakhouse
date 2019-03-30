@@ -4,8 +4,6 @@ const Contact = require('../../Model/Contact');
 
 router.all('/*', (req, res, next)=>
 {
-    // using this method we can modify any requests that
-    // go through this router here.
     next();
 });
 
@@ -26,8 +24,11 @@ router.post('/', (req, res)=>
 
     contact.save().then(newContact=>
     {
-        res.send('<h1>Not Implemented Yet.</h1>');
-    })
+        let msg = `Thank you for your message, we will get back to you as quickly 
+        as we can!`;
+        req.flash('successMessage', msg);
+        res.redirect('/');
+    });
 });
 
 module.exports = router;
