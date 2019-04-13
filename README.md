@@ -1,25 +1,47 @@
-# JapaneseSteakhouse
+# JapaneseSteakhouse Project
 
-#### Commands are in <""> ####
-#### Unless noted directly after, the quotes are NOT part of the command ####
-##### A group project by the students at Shift_Up #####
+##### A group project by the students of Shift_Up #####
 
-Instructions for running locally:
-  1. If you do not have NodeJS you will need to install it. NodeJS website: https://nodejs.org/en/. Be sure to install NPM with it. (If you already have node and npm installed you can skip the first 3 steps and just make sure to pull any new changes.)
-  2. Open a bash terminal and change directors (<"cd"> for git bash) to the project root, pull any new changes.
-  3. If this is the first time since the back end was added to the project you will need to run this command: <"npm install">
-    a. This is downloading all the packages the application depends on as indicated by the package.json file which should now be in your root directory.
-  4. At this point, you are ready to run the application. Run the following command: <"node app.js">
-    a. This will start your local server.
-  5. To view your website locally at this point, open your browser and 
-navigate to localhost:8000 (example: http://localhost:8000)
-  6. To close your server press <"Control + C">
+# Prerequisites for running this project locally #
+1. You will need to have nodejs installed on your machine. (https://nodejs.org/en/)
+2. You will need a valid link to a MongoDB Atlas database.
+  a. If you are a student of Shift_Up please ask for a link in the slack channel under group projects.
+3. You will need to have git installed. (https://git-scm.com/download)
 
-Notes:
-  This application will default to port 8000, however if that is an issue for your computer environment you can change that very easily in two different ways. 1. You can set the PORT variable right before starting the application (example: <"PORT=3000 node app.js">). 2. In your .env file you can set an environment variable (example: add this line below the DB_URL variable, PORT=3000).
-  In the package.json there are two scripts specified to start the server, one is for node, the other is for nodemon. To run nodemon you can use <"npm start">, to run node use <"npm run-script start-node">.
+# To install the project locally #
+1. (These commands are using git bash (terminal) for windows, they may vary depending on what OS you are using.) Navigate to 
+where you want the project to live on your machine.
+  a. (For MacOS and linux the paths will be different, but the commands should be the same. COMMAND = cd PATH = /c/ShiftUpRepos)
+  If the directory does not already exist you can use this line: mkdir /c/ShiftUpRepos && cd /c/ShiftUpRepos. If the directory 
+  already exists use this command: cd /path/to/project/root.
+2. Copy the project from github to your machine.
+  a. git clone git@github.com:nina-barraco/JapaneseSteakhouse.git
+3. Navigate to the root of the project that now lives on your computer.
+  a. cd JapaneseSteakhouse
+4. Install all the modules Node is using for this project.
+  a. npm install
+5. Set up .env file
+  a. (It's easier to set this file up from a code editor like visual studio code or sublime, but for the sake of consistency 
+  we will do it from terminal) cp ./.env.sample.txt ./.env
+  b. Replace the value assigned to DB_URL with the valid link to your MongoDB Atlas database.
 
-Pushing to Github:
-  1. <"git add file/path/relative/to/root/of/project"> (you can use <"git add ."> instead, however this will add anything that has been changed instead of specifically adding what you want to the staging area on git.)
-  2. <"git commit -m "commit message""> (Note: The quotes in commit message are part of the command) (if you forget to add a message to the git commit you will most likely be brought to a vim editor in bash. if this happens you need to press <"i"> (Note, the quotes inside the brackets are not part of the command, you just need to press the i key) and type your message ("message"). when you are done press <":"> then type <"wq"> and hit enter.
-  3. <"git push origin branchName">
+# To run your local server #
+1. If you do not have nodemon installed globally on your machine use any of these commands...
+  a. npm run start-node
+  b. node app.js
+2. If you have nodemon installed on your machine you can use any of these commands...
+  a. npm run start-node
+  b. node app.js
+  c. nodemon app.js
+  d. npm start
+
+# Contributors #
+1. Because this app is still in development, there are changes being made to it fairly regularly, so be sure to pull changes 
+down before you start making changes.
+  a. git pull
+2. If there are any changes to the package.json file or if you are not sure, check with npm for updates after pulling.
+  a. npm install
+3. When you are ready to push your changes up to github
+  a. git add file/to/be/added more/files/to/be/added
+  b. git commit -m "message attached to your commit for others to view"
+  c. git push origin master (If we were using branches it would be: git push origin <branch>)
