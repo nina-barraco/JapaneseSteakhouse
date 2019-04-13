@@ -1,4 +1,4 @@
-:squirrel:
+:squirrel: :octocat: :dragon: :turtle: :rage3: :rage4: :eyes: :skull: :see_no_evil: :hear_no_evil: :speak_no_evil: :poop: 
 # JapaneseSteakhouse Project
 
 ##### A group project by the students of Shift_Up #####
