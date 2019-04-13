@@ -5,7 +5,7 @@
 # Prerequisites for running this project locally #
 1. You will need to have nodejs installed on your machine. (https://nodejs.org/en/)
 2. You will need a valid link to a MongoDB Atlas database.
-  * If you are a student of Shift_Up please ask for a link in the slack channel under group projects.
+  a.If you are a student of Shift_Up please ask for a link in the slack channel under group projects.
 3. You will need to have git installed. (https://git-scm.com/download)
 
 # To install the project locally #
