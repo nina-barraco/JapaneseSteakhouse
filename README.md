@@ -48,3 +48,8 @@ down before you start making changes.
    - `git add file/to/be/added more/files/to/be/added`
    - `git commit -m "message attached to your commit for others to view"`
    - `git push origin master` (If we were using branches it would be: git push origin <branch>)
+
+# Slack Channel Instructions #
+1. If you are not already part of the group project chat you will want to either add yourself or ask for an invitation.
+   - (This assumes you are using the desktop app, the process might vary if you use slack through a browser) On your slack 
+application click Channels, and find the channel labeled groupprojects. 
