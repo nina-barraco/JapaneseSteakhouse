@@ -23,17 +23,17 @@
             <p id="description">Let us know how we can improve customer service</p>
             <form id="contact-form" action="/contact" method="POST">
                 <label for="firstName">First Name</label>
-                <input type="text" id="name" name="firstName" placeholder="first name" required><br><br><br>
+                <input required {{#if badUser.firstName}} value={{badUser.firstName}} {{/if}} type="text" id="name" name="firstName" placeholder="first name"><br><br><br>
                 <label for="lastName"> Last Name</label>
-                <input type="text" id="name" name="lastName" placeholder="last name" required><br><br><br>
+                <input required {{#if badUser.lastName}} value={{badUser.lastName}} {{/if}} type="text" id="name" name="lastName" placeholder="last name"><br><br><br>
                 <label for="phone"> Phone Number</label>
-                <input name="phone" type="text" id="phone number" phone number="phone number" placeholder="phone number"
-                    required><br><br><br>
+                <input required {{#if badUser.phone}} value={{badUser.phone}} {{/if}} name="phone" type="text" id="phone number" phone number="phone number" placeholder="phone number"
+                    ><br><br><br>
                 <label for="email">Email</label>
-                <input type="text" id="email" name="email" email="email" placeholder="email" required><br><br><br>
+                <input required {{#if badUser.email}}value={{badUser.email}} {{/if}} type="text" id="email" name="email" email="email" placeholder="email"><br><br><br>
                 <div>
                 <label for="body">Any comments or suggestions?</label>
-                <textarea name="body" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
+                <textarea required name="body" rows="4" cols="50" placeholder="Enter your comments here...">{{#if badUser.body}}{{badUser.body}}{{/if}}</textarea>
                 <button id="submit" type="submit" class="btn">Submit Comment</button>
             </form>
             <br><br>

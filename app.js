@@ -17,6 +17,7 @@ const opn = require('opn');
 const session = require('express-session');
 const flash = require('connect-flash');
 const exphbs = require('express-handlebars');
+const {sanitizeInput} = require('./Helper/Functions.js');
 
 app.engine('handlebars', exphbs());
 
@@ -39,6 +40,11 @@ app.use((req, res, next)=>
 {
     res.locals.successMessage = req.flash('successMessage');
     res.locals.errorMessage = req.flash('errorMessage');
+    if (req.hasOwnProperty('body'))
+    {
+        sanitizeInput(req.body);
+    }
+    
     next();
 });
 

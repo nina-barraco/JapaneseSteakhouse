@@ -31,44 +31,44 @@
                                     <label for="firstName">First Name: </label>
                                 </dt>
                                 <dd>
-                                    <input type="text" name="firstName" max-length="50" size="20" required />
+                                    <input {{#if badUser.firstName}} value={{badUser.firstName}}{{/if}} type="text" name="firstName" max-length="50" size="20" required />
                                 </dd><br>
                                 <dt>
                                     <label for="lastName">Last Name: </label>
                                 </dt>
                                 <dd>
-                                    <input type="text" name="lastName" max-length="50" size="20" required />
+                                    <input {{#if badUser.lastName}} value={{badUser.lastName}} {{/if}} type="text" name="lastName" max-length="50" size="20" required />
                                 </dd><br>
                                 <dt>
                                     <label for="phone">Telephone: </label>
                                 </dt>
                                 <dd>
-                                    <input type="tel" name="phone" max-length="20" size="10" required />
+                                    <input {{#if badUser.phone}} value={{badUser.phone}} {{/if}} type="text" name="phone" max-length="20" size="10" required />
                                 </dd><br>
                                 <dt>
                                     <label for="email">Email Address: </label>
                                 </dt>
                                 <dd>
-                                    <input class="email-validation" type="email" name="email" size="30"  required max-length="100" />
+                                    <input {{#if badUser.email}} value={{badUser.email}} {{/if}} class="email-validation" type="email" name="email" size="30"  required max-length="100" />
                                 </dd><br>
                                 <dt>
                                     <label for="reservation-date">Reservation Date:</label>
                                 </dt>
                                 <dd>
-                                    <input type="date" name="date" required />
+                                    <input required type="date" name="date"  />
                                 </dd><br>
                                 <dt>
                                     <label for="reservation-time">Reservation Time:</label>
                                 </dt>
                                 <dd>
-                                    <input type="time" id="apt" name="time"
-                                min="15:00" max="22:00" required/>
+                                    <input required type="time" id="apt" name="time"
+                                min="15:00" max="22:00" />
                                 </dd><br>
                                 <dt>
                                     <label for="party number">Party Number: </label>
                                 </dt>
                                 <dd>
-                                    <input type="text" name="size" max-length="50" size="3" required />
+                                    <input {{#if badUser.size}} value={{badUser.size}} {{/if}} type="text" name="size" max-length="50" size="3" required />
                                 </dd><br>
                                 <dt>
                                     <dd>
