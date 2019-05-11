@@ -18,7 +18,8 @@ where you want the project to live on your machine.
 directory 
   already exists use this command: `cd /path/to/project/root`.
 2. Copy the project from github to your machine.
-   - `git clone git@github.com:nina-barraco/JapaneseSteakhouse.git`
+   - `git clone git@github.com:nina-barraco/JapaneseSteakhouse.git` (this is for ssh, not https)
+   - for https use `git clone https://github.com/nina-barraco/JapaneseSteakhouse.git`
 3. Navigate to the root of the project that now lives on your computer.
    - `cd JapaneseSteakhouse`
 4. Install all the modules Node is using for this project.
@@ -27,6 +28,7 @@ directory
    - (It's easier to set this file up from a code editor like visual studio code or sublime, but for the sake of consistency 
   we will do it from terminal) `cp ./.env.sample.txt ./.env`
    - Replace the value assigned to DB_URL with the valid link to your MongoDB Atlas database.
+   - Explanation: these commands will copy the file (from the root of the project) .env.sample.txt into a new file, .env. After that you are pasting a valid url into a variable (DB_URL).
 
 # To run your local server #
 1. If you do not have nodemon installed globally on your machine use any of these commands...
