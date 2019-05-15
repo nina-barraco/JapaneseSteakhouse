@@ -1,4 +1,4 @@
-This document is a brief introduction to the handlebars templating engine.
+This document is a brief introduction to the handlebars templating engine. (Examples files are all in the project already and can be examined while reading this text file.)
 
 Q: What exactly is handlebars?
 A: Handlebars is a frontend framework for writing template files. A template file essentially boils down to a reusable blob of html, css, and javascript. It could be as large as a whole landing page, or as small as a single navigation bar. 
