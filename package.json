@@ -29,7 +29,7 @@
     "express-handlebars": "^3.0.2",
     "express-session": "^1.15.6",
     "moment": "^2.24.0",
-    "mongoose": "^5.4.10",
+    "mongoose": "^5.7.5",
     "opn": "^5.5.0"
   }
 }
